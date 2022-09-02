@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+ body{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    background:url(//images.weserv.nl/?url=i.imgur.com/6QJjYMe.jpg)  center repeat;
+    background-size: cover;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+
+}
+
+::-webkit-scrollbar-track {
+    background-color: pink;
+}
+
+::-webkit-scrollbar-track-thumb {
+    background-color: white;
+    border-radius: none;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+.about-me h2 {
+    color: white;
+    padding-top: 30%;
+    text-align: center;
+}
+
+.about-me p {
+    padding-top:20px;
+    color: white; 
+    text-align: center;    
+}
+
+.name {
+    color: pink;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    text-shadow: 3px 3px hotpink, 6px 6px hotpink, 9px 9px hotpink, 12px 12px 12px hotpink;
+    border: 8px double pink;
+    border-radius: 5px;
+    padding-left: 4px;
+    padding-right: 5px;
+    transform: skew(-10deg);
+    animation: ani 5s infinite ease-in-out alternate; /* name of animation, time it takes to complete one cycle of the animation, number of cycles, animation motion, direction */
+}
+
+@keyframes ani {
+    
+    100% {
+     text-shadow: -3px 3px hotpink, -6px 6px hotpink, -9px 9px hotpink, -12px 12px 12px hotpink;
+     transform: skew(15deg);   
+    }
+}
+
+a {
+    display: inline-flex;
+    justify-content: space-between; 
+    position: relative;
+    padding-left: 15%;
+    padding-top: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    color: pink
+}
+
+a:hover {
+    color: hotpink;
+    
+}
+
+* {
+    font-family: 'Rubik', sans-serif;
+}
+
+
+
+
+
+
+
+
